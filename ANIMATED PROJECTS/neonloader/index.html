@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: black;
+        }
+          .loader{
+            width: 20rem;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-color: blueviolet;
+            position: relative;
+            animation: ci 3s linear infinite reverse;
+          }
+
+        .loader::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 17rem;
+            
+            background-color: blueviolet;
+            border-radius: 50%;
+            background-color: black;
+            aspect-ratio: 1;
+            
+        }
+        .loader::after{
+            content: "";
+            position: absolute;
+            top: -2.5rem;
+            left: 8rem;
+            width: 5rem;
+            
+            background-color: blueviolet;
+            border-radius: 50%;
+            
+            aspect-ratio: 1;
+            box-shadow: 0 0 1rem blueviolet, 0 0 1.5rem blueviolet, 0 0 2rem blueviolet, 0 0 2.5rem blueviolet, 0 0 3rem blueviolet;
+            
+        }
+
+        @keyframes ci{
+            100%{
+                rotate: 360deg;
+            }
+        }
+
+         
+           
+
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>

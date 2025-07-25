@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- position,flex,grid -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color: black;
+            position: relative;
+            /* using flex */
+            display: flex;
+            justify-content: center ;
+            align-items: center;
+
+            /* using grid
+            display: grid;
+            place-items: center; */
+
+        }
+        .child{
+            /* using position */
+            position: absolute;
+            width:400px;
+            height:400px;
+            background-color: blueviolet;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%); 
+        }
+    </style>
+</head>
+<body>
+    <div class="child">
+
+    </div>
+</body>
+</html>
